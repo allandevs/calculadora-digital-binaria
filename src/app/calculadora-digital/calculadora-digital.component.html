@@ -1,0 +1,46 @@
+<h2>Calculadora Digital</h2>
+<div class="container">
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <br />
+       
+
+        <div class="calculadora">
+          <input   type="text" [(ngModel)]="resultado" class="form-control resultado" readonly="readonly"  />
+          
+          <div class="row">
+            <button  (click)="limpar()" type="button" class="btn btn-danger nbtn-lg clear font-weight-light">C</button>
+            <button (click)="montarResultado('/')" type="button" class="btn btn-warning btn-lg font-weight-light">÷</button>
+            <button (click)="montarResultado('*')" type="button" class="btn btn-warning btn-lg font-weight-light">x</button>
+          </div>
+
+          <div class="row">
+            <button (click)="montarResultado('7')" type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
+            <button (click)="montarResultado('8')" type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
+            <button (click)="montarResultado('9')" type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
+            <button (click)="montarResultado('-')" type="button" class="btn btn-warning btn-lg font-weight-light">-</button>
+          </div>
+          
+          <div class="row">
+            <button (click)="montarResultado('4')" type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
+            <button (click)="montarResultado('5')" type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
+            <button (click)="montarResultado('6')" type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
+            <button (click)="montarResultado('+')"type="button" class="btn btn-warning btn-lg font-weight-light">+</button>
+          </div>
+
+          <div class="row">
+            <button (click)="montarResultado('1')" type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
+            <button (click)="montarResultado('2')" type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
+            <button (click)="montarResultado('3')" type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
+            <button (click)="finalizar()" type="button" class="btn btn-warning btn-lg enter">=</button>
+          </div>
+
+          <div class="row" style="margin-top: -60px">
+            <button (click)="montarResultado('0')" type="button" class="btn btn-dark zero btn-lg font-weight-light">0</button>
+            <button (click)="montarResultado('.')" type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

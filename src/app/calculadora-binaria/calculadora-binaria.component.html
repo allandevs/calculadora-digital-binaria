@@ -1,0 +1,27 @@
+<h2>Calculadora Binaria</h2>
+<div class="container">
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <br />
+       
+
+        <div class="calculadora">
+          <input   type="text" [(ngModel)]="resultado" class="form-control resultado" readonly="readonly"  />
+          
+          <div class="row">
+            <button  (click)="limpar()" type="button" class="btn btn-danger nbtn-lg clear font-weight-light">C</button>
+
+          </div>
+          <div class="row" >
+            <button (click)="montarResultado('1')" type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
+            <button (click)="montarResultado('0')" type="button" class="btn btn-dark  btn-lg font-weight-light">0</button>
+          </div>
+          <div class="row">
+            <button (click)="montarResultado('+')"type="button" class="btn btn-warning btn-lg font-weight-light">+</button>
+            <button (click)="finalizar()" type="button" class="btn btn-warning btn-lg enter">=</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
